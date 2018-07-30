@@ -1,7 +1,5 @@
-import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
-import static com.codeborne.selenide.CollectionCondition.size;
 import static com.codeborne.selenide.Condition.attribute;
 import com.codeborne.selenide.Configuration;
 import pages.LoginPage;
@@ -18,6 +16,7 @@ public class JiraLoginTest {
 
         Configuration.remote = "http://localhost:4444/wd/hub";
         Configuration.browser = "chrome";
+        Configuration.timeout = 7000;
 
         open("http://jira.hillel.it:8080/");
 

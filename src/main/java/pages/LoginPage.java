@@ -11,14 +11,14 @@ public class LoginPage {
     private String loginButtonID = "login";
 
     public void enterLogin(String login){
-        $(By.id(loginInputID)).sendKeys(login);
+        $("#" + this.loginInputID).sendKeys(login);
     }
 
     public void enterPassword(String password){
-        $(By.id(passwordInputID)).sendKeys(password);
+        $("#" + this.passwordInputID).sendKeys(password);
     }
 
     public void clickLoginButton(){
-        $(By.id(loginButtonID)).click();
+        $("#" + this.loginButtonID).click();
     }
 }
